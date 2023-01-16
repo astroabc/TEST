@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="node-a"><br>
+    <input type="text" name="" id="node-b">
+    <button onclick="handleSum()">Click me</button>
+    <h3 class="sumAB"></h3>
+    <script>
+
+        function handleSum() {
+            let sumAB;
+            const nodeA = parseInt(document.querySelector("#node-a").value);
+            const nodeB = parseInt(document.querySelector("#node-b").value);
+            if(nodeA < nodeB){
+                sumAB = nodeA + nodeB;
+                document.querySelector(".sumAB").innerHTML = "Tong a + b = " + sumAB;
+            }else{
+                alert("Nhập số a < b!")
+            }
+        }
+    </script>
+</body>
+</html>
